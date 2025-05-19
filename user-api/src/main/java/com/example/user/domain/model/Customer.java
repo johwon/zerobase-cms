@@ -3,10 +3,7 @@ package com.example.user.domain.model;
 import com.example.user.domain.SignUpForm;
 import com.fasterxml.jackson.databind.ser.Serializers;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.envers.AuditOverride;
 
 import java.time.LocalDate;
@@ -15,6 +12,7 @@ import java.util.Locale;
 
 @Entity
 @Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
