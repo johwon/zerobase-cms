@@ -1,7 +1,8 @@
 package com.example.user.service;
 
-import com.example.user.domain.SignUpForm;
-import com.example.user.domain.model.Customer;
+import com.zerobase.cms.user.domain.SignUpForm;
+import com.zerobase.cms.user.domain.model.Customer;
+import com.zerobase.cms.user.service.SignUpCustomerService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

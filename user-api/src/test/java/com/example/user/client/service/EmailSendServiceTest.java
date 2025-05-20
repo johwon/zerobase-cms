@@ -1,6 +1,6 @@
 package com.example.user.client.service;
 
-import com.example.user.service.EmailSendService;
+import com.zerobase.cms.user.service.EmailSendService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
