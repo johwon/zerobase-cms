@@ -1,0 +1,71 @@
+### 회원가입 (고객)
+POST http://localhost:8081/signUp/customer
+Content-Type: application/json
+
+{
+  "email": "4971834@gmail.com",
+  "name": "myName",
+  "password": "password1234",
+  "birth": "2000-05-22",
+  "phone": "01011111111"
+}
+
+### 이메일 인증 (고객)
+GET http://localhost:8081/signUp/customer/verify?email=4971834@naver.com&code=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjciLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNzQ3ODkyNjk4LCJleHAiOjE3NDc5NzkwOTh9.nwyp1MYt81LloUYP15KlJ6TCLeXPC1KW3CVZUhn9TACQfTVZlFTfga1E15j624TfqsIiycnUVhNHC43QKucCAg
+Content-Type: application/json
+
+### 로그인 (고객)
+POST http://localhost:8081/signIn/customer
+Content-Type: application/json
+
+{
+  "email": "4971834@naver.com",
+  "password": "string"
+}
+
+### 회원 정보 조회 (고객)
+GET http://localhost:8081/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjciLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNzQ3ODkzNDA1LCJleHAiOjE3NDc5Nzk4MDV9.e3oV_EOVq5TdiCQ2nNdUMCTURk5YH9KGpsj3og5Z8EVPsm0uFU04pg5MCa6vJoM-wAHfX_j79y6PADF0RNqFmg
+
+### 잔액 변경 (고객)
+POST http://localhost:8081/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjciLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNzQ3ODkzNDA1LCJleHAiOjE3NDc5Nzk4MDV9.e3oV_EOVq5TdiCQ2nNdUMCTURk5YH9KGpsj3og5Z8EVPsm0uFU04pg5MCa6vJoM-wAHfX_j79y6PADF0RNqFmg
+
+{
+  "from": "server",
+  "message": "잔액 충전",
+  "money": 50000
+}
+
+###############################
+
+### 회원가입 (셀러)
+POST http://localhost:8081/signUp/seller
+Content-Type: application/json
+
+{
+  "email": "4971834@gmail.com",
+  "name": "myName",
+  "password": "password1234",
+  "birth": "2000-05-22",
+  "phone": "01011111111"
+}
+
+### 이메일 인증 (셀러)
+GET http://localhost:8081/signUp/seller/verify?email=4971834@naver.com&code=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjciLCJyb2xlcyI6IkNVU1RPTUVSIiwiaWF0IjoxNzQ3ODkyNjk4LCJleHAiOjE3NDc5NzkwOTh9.nwyp1MYt81LloUYP15KlJ6TCLeXPC1KW3CVZUhn9TACQfTVZlFTfga1E15j624TfqsIiycnUVhNHC43QKucCAg
+Content-Type: application/json
+
+### 로그인 (셀러)
+POST http://localhost:8081/signIn/seller
+Content-Type: application/json
+
+{
+  "email": "4971834@naver.com",
+  "password": "string"
+}
+
+
+
+
