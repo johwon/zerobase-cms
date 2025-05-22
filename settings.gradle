@@ -1,2 +1,2 @@
 rootProject.name = 'cms'
-include ':domain', ':user-api'
+include ':domain', ':user-api', ':order-api'
