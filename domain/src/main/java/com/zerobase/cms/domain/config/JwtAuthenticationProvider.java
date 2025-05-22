@@ -57,8 +57,6 @@ public class JwtAuthenticationProvider {
                     .build()
                     .parseClaimsJws(token)
                     .getBody();
-            System.out.println("Claims ID: " + c.getId());
-            System.out.println("Claims Subject (encrypted): " + c.getSubject());
 
             String email = Aes256Util.decrypt(c.getSubject());
             System.out.println("Decrypted email: " + email);
@@ -66,7 +64,6 @@ public class JwtAuthenticationProvider {
             Long userId = Long.valueOf(c.getId());
             return new UserVo(userId, email);
         } catch (Exception e) {
-            System.out.println("Exception in getUserVo: " + e.getMessage());
             e.printStackTrace();
             return null;  // 또는 적절한 예외 처리
         }
