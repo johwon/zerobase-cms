@@ -10,4 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface MailgunClient {
     @PostMapping("sandboxb072ef3fd20e4dc3a400833c672d701f.mailgun.org/messages")
     Response sendEmail(@SpringQueryMap SendMailForm form);
+
+
 }
