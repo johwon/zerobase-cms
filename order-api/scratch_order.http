@@ -10,7 +10,7 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4d
     {
       "name": "270",
       "price": 100000,
-      "count": 1
+      "count": 10
     }
   ]
 }
@@ -99,3 +99,8 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4d
     }
   ]
 }
+
+### 카트 확인
+GET http://localhost:8082/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA
