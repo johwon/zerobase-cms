@@ -1,6 +1,7 @@
 package com.zerobase.cms.order.domain.repository;
 
 import com.zerobase.cms.order.domain.model.Product;
+import com.zerobase.cms.order.domain.product.ProductRepositoryCustom;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Long> {
+public interface ProductRepository extends JpaRepository<Product, Long>, ProductRepositoryCustom {
     @EntityGraph(attributePaths = {"productItems"}, type = EntityGraph.EntityGraphType.LOAD)
     Optional<Product> findBySellerIdAndId(Long sellerId, Long id);
 
