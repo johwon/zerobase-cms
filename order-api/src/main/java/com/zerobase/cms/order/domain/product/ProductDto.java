@@ -27,4 +27,15 @@ public class ProductDto {
                 .items(items)
                 .build();
     }
+
+    public static ProductDto withoutItemsFrom(Product product) {
+//        List<ProductItemDto> items = product.getProductItems()
+//                .stream().map(ProductItemDto::from).toList();
+        return ProductDto.builder()
+                .id(product.getId())
+                .name(product.getName())
+                .description(product.getDescription())
+//                .items(items)
+                .build();
+    }
 }
