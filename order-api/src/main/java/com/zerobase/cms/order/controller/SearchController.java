@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
 @RequestMapping("/search/product")
 @RequiredArgsConstructor
 public class SearchController {
-    private final ProductService productService;
     private final JwtAuthenticationProvider provider;
     private final ProductSearchService productSearchService;
 

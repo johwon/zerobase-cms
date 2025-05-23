@@ -1,7 +1,6 @@
 package com.zerobase.cms.order.domain.repository;
 
 import com.zerobase.cms.order.domain.model.Product;
-import com.zerobase.cms.order.domain.product.ProductRepositoryCustom;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

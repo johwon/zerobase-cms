@@ -4,7 +4,7 @@ Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA
 
 {
-  "name": "나이키 에어포스",
+  "name": "나이키 스페지알",
   "description": "상품 설명",
   "items": [
     {
@@ -64,6 +64,6 @@ Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA
 
 ### 상품 디테일 검색
-GET http://localhost:8082/search/product/detail?productId=1
+GET http://localhost:8082/search/product/detail?productId=4
 Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA

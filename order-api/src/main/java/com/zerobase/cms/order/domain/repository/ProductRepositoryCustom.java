@@ -1,6 +1,7 @@
-package com.zerobase.cms.order.domain.product;
+package com.zerobase.cms.order.domain.repository;
 
 import com.zerobase.cms.order.domain.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
