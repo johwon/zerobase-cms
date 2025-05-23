@@ -142,7 +142,13 @@ public class CartApplication {
         return form.getItems().stream().noneMatch(
                 formItem -> {
                     Integer cartCount = cartItemCountMap.get(formItem.getId());
+                    if(cartCount == null){
+                        cartCount = 0;
+                    }
                     Integer currentCount = currentItemCountMap.get(formItem.getId());
+                    if(currentCount == null){
+                        currentCount = 0;
+                    }
                     return formItem.getCount()+cartCount > currentCount;
                 });
     }
