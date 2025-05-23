@@ -4,7 +4,7 @@ Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA
 
 {
-  "name": "나이키 스페지알",
+  "name": "나이키 에어포스",
   "description": "상품 설명",
   "items": [
     {
@@ -78,3 +78,24 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4d
 DELETE http://localhost:8082/seller/product/item?id=4
 Content-Type: application/json
 X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA
+
+
+### 카트 추가
+POST http://localhost:8082/customer/cart
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxK1ZyQVdYSWtZSVVKNU1KMVRsOGxEbzd4dG5jODFjVGp6SmZKZlhTMU9FPSIsImp0aSI6IjIiLCJyb2xlcyI6IlNFTExFUiIsImlhdCI6MTc0Nzk3MDEyNiwiZXhwIjoxNzQ4MDU2NTI2fQ.91HnlFT2kfcSMijTTQlCKuD9H2b32XUG0lK7V5TRWs3KXaYsi54EdiwMRdHGjzkBqiUWPRn299dhFqqxLSjiDA
+
+{
+  "id": 1,
+  "sellerId": 2,
+  "name": "나이키 에어포스",
+  "description": "상품 설명",
+  "items": [
+    {
+      "id": 1,
+      "name": "270",
+      "count": 1,
+      "price": 100000
+    }
+  ]
+}
