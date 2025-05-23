@@ -23,6 +23,10 @@ repositories {
 	mavenCentral()
 }
 
+ext{
+	set('springCloudVersion', "2022.0.4")
+}
+
 dependencies {
 	// Spring Boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -43,8 +47,7 @@ dependencies {
 
 dependencyManagement {
 	imports {
-		// ✅ Spring Cloud BOM 추가 (spring-cloud 2023.x 기준)
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:2023.0.1"
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
 
