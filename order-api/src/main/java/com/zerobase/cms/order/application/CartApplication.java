@@ -156,4 +156,10 @@ public class CartApplication {
     public void clearCart(Long customerId){
         cartService.putCart(customerId,null);
     }
+
+    public Cart updateCart(Long customerId, Cart cart){
+        // 상품 삭제, 수량 변경 등
+        cartService.putCart(customerId,cart);
+        return getCart(customerId);
+    }
 }
